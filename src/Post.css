@@ -41,3 +41,57 @@
   margin-bottom: 10px;
   font-size: 15px;
 }
+
+.post__footer .liked {
+  color: #e0245e; /* Twitter-like red */
+}
+
+/* Retweet button active state */
+.post__footer .retweeted {
+  color: #17bf63; /* Twitter green */
+}
+
+/* Comment Section */
+.post__comments {
+  margin-top: 15px;
+  border-top: 1px solid #e6ecf0;
+  padding-top: 10px;
+}
+
+.post__comment {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #f5f8fa;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.post__comments form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.post__comments input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.post__comments button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #1da1f2;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.post__comments button:hover {
+  background-color: #0c85d0;
+}
