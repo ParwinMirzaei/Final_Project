@@ -21,3 +21,34 @@
 }
 
 
+.feed__tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--twitter-background);
+}
+
+.feed__tab {
+  flex: 1;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--twitter-gray);
+  transition: all 0.3s ease;
+}
+
+.feed__tab.active {
+  color: var(--twitter-blue);
+  border-bottom: 3px solid var(--twitter-blue);
+}
+
+.feed__tab:hover {
+  background-color: var(--twitter-gray-light);
+}
+
+
