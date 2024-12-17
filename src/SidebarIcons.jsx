@@ -1,14 +1,16 @@
-import React from 'react';
-import "./SidebarIcons.css"
-import "./App.css"
+import React from "react";
+import "./SidebarIcons.css";
 
-function SidebarIcons({active, text, Icon}) {
+function SidebarIcons({ Icon, text, active, onClick }) {
   return (
-    <div className='sidebarIcons'>
+    <div
+      className={`sidebarIcons ${active ? "sidebarIcons--active" : ""}`}
+      onClick={onClick}
+    >
       <Icon />
       <h2>{text}</h2>
     </div>
-  )
+  );
 }
 
 export default SidebarIcons;
